@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>My Portfolio</title>
+    <style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    text-align: center;
+}
+
+header {
+    background-color: #0d5da8;
+    padding: 20px;
+    color: white;
+}
+
+.hobby-item {
+    display: flex;
+    align-items: flex-start; 
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+form {
+    max-width: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+textarea {
+    min-height: 20px;
+    resize: vertical;
+}
+
+label, input, textarea, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+section {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+
+table {
+    width: 80%; 
+    max-width: 800px;
+    border-collapse: collapse;
+    margin: 1rem auto; 
+}
+
+th, td {
+    width: 50%; 
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+table, th, td {
+    border: 1px solid #ddd; 
+}
+
+
+footer {
+    margin-top: 40px;
+    font-size: 0.8em;
+}
+
+
+.hobby {
+    margin-top: 20px;
+}
+
+.hobby-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 250px;
+    margin: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+img {
+    margin: 0 auto;
+    display: block;
+    margin-top: 2rem;
+}
+
+
+.skill {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 20px auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.skill-header {
+    background-color: #0d5da8;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.list-group {
+    list-style: none;
+    padding: 0;
+}
+
+.list-group-item {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+    </style>
+</head>
+<body>
+
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">My travel</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Welcome to My Personal Webpage</h1>
+    </header>
+
+    <div class="container">
+        <img src="photo_5406988802460867709_y.jpg" alt="My Photo" style="width:200px; height:auto;">
+        
+        <div class="info">
+            <p><strong>Name:</strong> Moldir</p>
+            <p><strong>Surname:</strong> Zulkhairova</p>
+            <p><strong>Course:</strong> Software engineer</p>
+            <p><strong>University:</strong> AITU</p>
+            <p><strong>Group:</strong> SE-2316</p>
+            <p><strong>Barcode:</strong> 230461</p>
+        </div>
+    </div>
+
+    <section>
+        <h2>About Me</h2>
+        <p>I graduated from school №84 in 2023. I currently live in Astana, but was born in Ust-Kamenogorsk.</p>
+        <p> I volunteered in Integrity. My goal is to become a professional in my field.</p>
+        <p>Outside of school, I enjoy playing the piano, exploring new genres of music, and spending time with family and friends.</p>
+        <p> I strive for continuous improvement and look forward to new challenges in the field of technology.</p>
+    </section>
+
+   
+
+    <div class="skill" style="width: 18rem;">
+        <div class="skill-header">
+            My Skills
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Spring Boots</li>
+          <li class="list-group-item">Python</li>
+          <li class="list-group-item">C++</li>
+          <li class="list-group-item">Algorithm and Data structure</li>
+          <li class="list-group-item">Solfeggio</li>
+        </ul>
+      </div>
+
+    <h2>If you want to know about my hobbies</h2>
+
+
+    <section class="hobby">
+        <div class="hobby-container">
+            <div class="card">
+                <img src="instruments_others_piano-m.jpg" class="card-img-top" alt="Piano" width="200px" height="auto">
+                <div class="card-body">
+                    <h5 class="card-title">Piano</h5>
+                    <p class="card-text">I went to music school at the age of 6 and studied for 9 years. The reason for choosing this instrument was my aunt. She had an old piano at home and I wanted to be able to play it. I think that music school taught me determination and patience.</p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="24bd9e42f4a34b1c71dd662f105878ce.jpg" class="card-img-top" alt="Reading Book" width="200px" height="auto">
+                <div class="card-body">
+                    <h5 class="card-title">Reading Book</h5>
+                    <p class="card-text">Reading gives me a way to experience thousands of different lives. I find myself in another world and experience emotions and adventures without even leaving home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <center>
+    <h2>My Favorite Book</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Six of Crows</td>
+                    <td>Leigh Bardugo</td>
+                </tr>
+                <tr>
+                    <td>Crooked Kingdom</td>
+                    <td>Leigh Bardugo</td>
+                </tr>
+                <tr>
+                    <td>Lockwood & Co: The Screaming Staircase</td>
+                    <td>onathan Stroud</td>
+                </tr>
+            
+            </tbody>
+        </table>
+        </center>
+   
+
+        <center>
+            <h2>My Favorite Work</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Experience</td>
+                        <td>Ludovico Einaudi</td>
+                    </tr>
+                    <tr>
+                        <td>Amelie</td>
+                        <td>Ludovico Einaudi</td>
+                    </tr>
+                    <tr>
+                        <td>to Eliza</td>
+                        <td>Ludwig van Beethoven</td>
+                    </tr>
+                
+                </tbody>
+            </table>
+        </center>
+    
+  
+    <h2>If you want to contact me</h2>
+    <section>
+        <h2>Email</h2>
+        <p>230461@astanait.edu.kz</p>
+
+        <h2>Phone</h2>
+        <p>+77051232485</p>
+
+        <h2>Telegram</h2>
+        <p>@moldir_zulkhairova</p>
+    </section>
+
+    <section id="contact">
+        <center>
+        <h2>Contact Me</h2>
+        <form action="/send-message" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="1" required oninput="autoResize(this)"></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </center>
+    </section>
+
+    <script>
+        function autoResize(textarea) {
+            textarea.style.height = 'auto';  
+            textarea.style.height = textarea.scrollHeight + 'px';  
+        }
+    </script>
+
+
+<footer>
+    <p>&copy; 2024 Zulkhairova Moldir. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
