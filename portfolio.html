@@ -150,6 +150,39 @@ img {
 .list-group-item:last-child {
     border-bottom: none;
 }
+button{
+    width: 150px;
+    background-color: #0d5da8;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    margin-top: 10px; 
+}
+.done {
+      text-decoration: line-through;
+    }
+  
+    .tasks-container {
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+    h2 {
+       margin-top: 40px;
+    }
+
 
     </style>
 </head>
@@ -165,6 +198,8 @@ img {
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" href="index.html">My travel</a>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="js.html">Math</a>
                 </ul>
             </div>
         </div>
@@ -175,7 +210,8 @@ img {
     </header>
 
     <div class="container">
-        <img src="photo_5406988802460867709_y.jpg" alt="My Photo" style="width:200px; height:auto;">
+        
+        <img id = "image1" src="photo_5406988802460867709_y.jpg" alt="My Photo" style="width:200px; height:auto;">
         
         <div class="info">
             <p><strong>Name:</strong> Moldir</p>
@@ -185,6 +221,12 @@ img {
             <p><strong>Group:</strong> SE-2316</p>
             <p><strong>Barcode:</strong> 230461</p>
         </div>
+      
+        <div class="button-container">
+        <button onclick="changeImage()">Hide Photo</button>
+        <button onclick="changeImage2()">Personal Photo</button>
+    </div>
+    
     </div>
 
     <section>
@@ -195,7 +237,23 @@ img {
         <p> I strive for continuous improvement and look forward to new challenges in the field of technology.</p>
     </section>
 
-   
+    <h4>If you want change background-color</h4>
+    
+    <div class="button-container">
+    <button onclick="changeBackgroundColor()">Lightblue</button>
+    <button onclick="changeBackgroundColor2()">White</button>
+    
+</div>
+
+
+  <h2>My To-Do List</h2>
+  <div class="tasks-container">
+  <input type="text" id="taskInput" placeholder="Enter a task...">
+  <div class="button-container">
+  <button onclick="addTask()">Add Task</button>
+  </div>
+  <ul id="taskList"></ul>
+</div>
 
     <div class="skill" style="width: 18rem;">
         <div class="skill-header">
@@ -321,12 +379,8 @@ img {
     </center>
     </section>
 
-    <script>
-        function autoResize(textarea) {
-            textarea.style.height = 'auto';  
-            textarea.style.height = textarea.scrollHeight + 'px';  
-        }
-    </script>
+
+   <script src = "./index.js"></script>
 
 
 <footer>
